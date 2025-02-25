@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ravi Patel's Portfolio</title>
+    <link rel="icon" href="images/icon.png" type="image/x-icon" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .about-mf .box-shadow-full {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+
+        .about-mf .about-img {
+            margin-bottom: 2rem;
+        }
+
+            .about-mf .about-img img {
+                margin-left: 10px;
+            }
+
+        .skill-mf .progress {
+            margin: .5rem 0 1.2rem 0;
+            border-radius: 0;
+            height: .7rem;
+        }
+
+            .skill-mf .progress .progress-bar {
+                height: .7rem;
+                background-color: #ffbd39;
+            }
+
+        #typing-animation {
+            position: relative;
+            font-size: 30px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 3s steps(20, end) infinite;
+        }
+
+            #typing-animation:before {
+                content: "";
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 100%;
+                background-color: #ccc;
+                animation: typing-cursor 0.5s ease-in-out infinite;
+            }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes typing-cursor {
+            from {
+                width: 5px;
+            }
+
+            to {
+                width: 0;
+            }
+        }
+
+        .zoom-effect {
+            overflow: hidden;
+            transition: transform 0.3s ease-out;
+        }
+
+            .zoom-effect:hover {
+                transform: scale(1.1);
+            }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .blog-box {
+            background-color: #ffbd39;
+            color: #000000;
+            width: 500px;
+            height: 500px;
+            border-radius: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: auto;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            color: #000;
+        }
+
+            .close:hover {
+                color: #ff0000;
+            }
+
+        .blog-box h3 {
+            margin-top: 0;
+            color: #000000;
+        }
+
+        .blog-box img {
+            width: 400px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .blog-box ul {
+            padding-left: 20px;
+        }
+
+            .blog-box ul li {
+                margin-bottom: 10px;
+                color: #000000;
+            }
+
+        .project-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+            .project-row .col-md-4 {
+                flex: 0 0 32%;
+                max-width: 32%;
+            }
+
+        .motivation-slide {
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+            .motivation-slide::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+            }
+
+            .motivation-slide h2 {
+                font-size: 2rem;
+                font-weight: bold;
+                position: relative;
+                z-index: 1;
+                margin-bottom: 10px;
+            }
+
+            .motivation-slide p {
+                font-size: 1.2rem;
+                position: relative;
+                z-index: 1;
+                font-style: italic;
+            }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">My Portfolio</a>
+            <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav nav ml-auto">
+                    <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+                    <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+                    <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+                    <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+                    <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home-section" class="hero">
+        <div class="home-slider owl-carousel">
+            <div class="slider-item">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+                        <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                            <div class="text">
+                                <span class="subheading">Hallo! Namaste!</span>
+                                <h1 class="mb-4 mt-3">I'm <span>Ravi Patel</span></h1>
+                                <span id="typing-animation"></span>
+                                <script>
+                                    const typingAnimationElement = document.getElementById('typing-animation');
+                                    const typingTexts = [
+                                        'Motivated ',
+                                        'Energetic',
+                                        '56% Genius   ',
+                                    ];
+
+                                    function playTypingAnimation(text) {
+                                        for (let i = 0; i < text.length; i++) {
+                                            setTimeout(() => {
+                                                typingAnimationElement.textContent += text[i];
+                                            }, i * 200);
+                                        }
+
+                                        setTimeout(() => {
+                                            typingAnimationElement.textContent = '';
+                                            playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                                        }, text.length * 200);
+                                    }
+
+                                    playTypingAnimation(typingTexts[0]);
+                                </script>
+                                <br>
+                                <br>
+                                <h2>A Business Student</h2>
+                                <p>
+                                    <a href="https://www.linkedin.com/in/ravi-patel332" class="btn btn-primary py-3 px-4">Linkedin</a>
+                                    <a href="https://www.instagram.com/itz_ravip/" class="btn btn-white btn-outline-white py-3 px-4">Instagram</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="row d-flex align-items-stretch">
+                    <div class="col-md-6 col-lg-5 d-flex">
+                        <div class="img-about img d-flex align-items-stretch">
+                            <div class="overlay">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-5">
+                                        <div class="about-img">
+                                            <img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-7">
+                                        <div class="about-info">
+                                            <p><span class="title-s">Education: </span> <span>Bachelor in Business and Engineering </span></p>
+                                            <p><span class="title-s">Focus Field: </span> <span>Marketing and Business Development</span></p>
+                                            <p><span class="title-s">Address: </span> <span>Schweinfurt, Germany</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skill-mf">
+                                    <p class="title-s">Skills</p>
+                                    <span>Market Research</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span>Statistical Analysis</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span>Data Visualization</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span>German Language</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span>English Language</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 93%" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+                        <div class="row justify-content-start pb-3">
+                            <div class="col-md-12 heading-section ftco-animate">
+                                <h1>Hi. I'm Ravi Patel, and it's nice to meet you.</h1>
+                                <p>
+                                    Welcome to my <em>personal</em> website. That's me in the photo with a
+                                    <a href="https://en.wikipedia.org/wiki/Rickrolling">pink gradient background</a> and a <a href="https://www.amazon.com/Olive-Green-Jacket/s?k=Olive+Green+Jacket">Green Jacket</a>.
+                                </p>
+                                <p>
+                                    It was taken back in the <a href="https://en.wikipedia.org/wiki/21st_century">early 21<sup>st</sup> Century</a> when our atmosphere only held 373.15 ppm of CO<sub>2</sub>
+                                    and I'm a <a href="https://youtu.be/zS1cLOIxsQ8">grown up</a> now 😎.
+                                </p>
+                                <p>
+                                    I'm looking for something more <em>professional</em>, please
+                                    <a href="https://www.gettyimages.de/detail/foto/group-of-office-workers-in-a-boardroom-presentation-lizenzfreies-bild/73970377">click on this link</a>.
+                                </p>
+                                <ul class="about-info mt-4 px-md-0 px-2">
+                                    <li class="d-flex"><span>Domain:</span> <span>Business Development, Business Planning &amp; Marketing</span></li>
+                                    <li class="d-flex"><span>Language:</span> <span>English, German, Gujarati, Hindi </span></li>
+                                    <li class="d-flex"><span>Tools Learned :</span> <span>Power BI,  Excel,  Word,  360 Fusion,  Applus & SAP s/4 hana(basic), SQL(basic), Canva Design</span></li>
+                                    <li class="d-flex"><span>Interest:</span> <span>Traveling, I can capture good photos, Web surfing</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+        <div class="container">
+            <div class="row justify-content-center pb-5">
+                <div class="col-md-10 heading-section text-center ftco-animate">
+                    <h1 class="big big-2">Resume</h1>
+                    <h2 class="mb-4">Resume</h2>
+                    <p>Enthusiastic Business and Engineering student with a strong foundation in market research, data findings and project management. Experienced in conducting detailed research, developing strategic insights, and working on real-world business challenges. Passionate about leveraging data-driven decision-making to drive growth and innovation. Eager to apply analytical and problem-solving skills in a dynamic, professional environment</p>
+                </div>
+            </div>
+            <div class="row">
+                <h1 class="big-4">Company Experience</h1>
+                <div class="underline"></div>
+            </div>
+            <br>
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-8">
+                    <div class="resume-wrap ftco-animate">
+                        <span class="date">03/2022 - 06/2022</span>
+                        <h2>Pre-Internship</h2>
+                        <span class="position">ACME Holdings Pvt.ltd </span>
+                        <p class="mt-4">
+                            ACME Holdings develops and manufactures pre-engineered Industrial Structure in Vadodara, Gujarat.
+                            <ul>
+                                <li>Participated in various activities involved in prefabricated building structures.</li>
+                                <li>Engaged with various departments in client follow-ups and industry trend analysis.</li>
+                                <li>Gained hands-on experience in quality control and industrial process optimization.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <h1 class="big-4">Education</h1>
+                <div class="underline"></div>
+            </div>
+            <br>
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-7">
+                    <div class="resume-wrap ftco-animate">
+                        <span class="date">2014-Present</span>
+                        <h2>Bachelor of Business and Engineering</h2>
+                        <span class="position">Technische Hochschule Würzburg-Schweinfurt</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-6 text-center ftco-animate">
+                    <p><a href="images/resume.pdf" class="btn btn-primary py-4 px-5">Download CV</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section" id="project-section">
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-5">
+                <div class="col-md-7 heading-section text-center ftco-animate">
+                    <h1 class="big big-2">Projects</h1>
+                    <h2 class="mb-4">Projects</h2>
+                    <p>Below are the academic project works performed using various tools.</p>
+                </div>
+            </div>
+            <div class="row project-row">
+                <div class="col-md-4 d-flex ftco-animate">
+                    <div class="blog-entry justify-content-end">
+                        <a class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');" onclick="openBlogBox('productModal')">
+                        </a>
+                        <div class="text mt-3 float-right d-block">
+                            <h3 class="heading"><a onclick="openBlogBox('productModal')">Product Development</a></h3>
+                            <p>Click to read more</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex ftco-animate">
+                    <div class="blog-entry justify-content-end">
+                        <a class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');" onclick="openBlogBox('Modal2')">
+                        </a>
+                        <div class="text mt-3 float-right d-block">
+                            <h3 class="heading"><a onclick="openBlogBox('Modal2')">Market Research</a></h3>
+                            <p>Click to read more</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex ftco-animate">
+                    <div class="blog-entry">
+                        <a class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');" onclick="openBlogBox('Modal3')">
+                        </a>
+                        <div class="text mt-3 float-right d-block">
+                            <h3 class="heading"><a onclick="openBlogBox('Modal3')">Aldi Logistics Workshop</a></h3>
+                            <p>Click to read more</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="productModal" class="modal">
+        <div class="blog-box">
+            <span class="close" onclick="closeBlogBox('productModal')">&times;</span>
+            <h3>Product Development</h3>
+            <ul>
+                <li> Developed a butter portioning device on time, focusing from designing the device, concept to prototype.</li>
+                <li> Including CAD modeling in fusion 360 and documentations.</li>
+                <li> Demonstrated the ability to apply theoretical knowledge from academic modules to practical problems.</li>
+                <li> Aligning with industry standards and showcasing analytical skills relevant to the field.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="Modal2" class="modal">
+        <div class="blog-box">
+            <span class="close" onclick="closeBlogBox('Modal2')">&times;</span>
+            <h3>Market Research</h3>
+            <ul>
+                <li>Conducted market research and competitive analysis to develop a market entry strategy for the U.S. market.</li>
+                <li>Utilized research data findings, market trends and SWOT Analysis to assess industry trends and feasibility.</li>
+                <li>Provided data-driven insights that helped Managing Director make strategic expansion decisions.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="Modal3" class="modal">
+        <div class="blog-box">
+            <span class="close" onclick="closeBlogBox('Modal3')">&times;</span>
+            <h3>Logistics Workshop</h3>
+            <ul>
+                <img src="images/china.jpg" alt="China Image" object-fit: cover; overflow-y: auto;>
+                <li>Analysed shipment delays and supply chain inefficiencies in ALDI China’s logistics operations.</li>
+                <li>Collaborated with International team members to identify and propose optimization strategies.</li>
+                <li>Visualized key metrics like travel distance, Product Shelf life using PowerBI.</li>
+                <li>Applied Lean Management knowledge and Process Mapping to improve delivery times and increase supply chain efficiency.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function openBlogBox(modalId) {
+            document.getElementById(modalId).style.display = "block";
+        }
+
+        function closeBlogBox(modalId) {
+            document.getElementById(modalId).style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = "none";
+            }
+        };
+    </script>
+
+    <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+        <div class="owl-carousel owl-theme">
+            <div class="motivation-slide" style="background-image: url('images/slide1.jpg');">
+                <div>
+                    <h2>
+                        "KNOWLEDGE IS IDENTIFYING EGGPLANT IS A FRUIT. WISDOM IS NOT USING IT IN FRUIT SALAD."
+                    </h2>
+                    <p>- Unknown </p>
+                </div>
+            </div>
+            <div class="motivation-slide" style="background-image: url('images/slide2.jpg');">
+                <div>
+                    <h2>"Success is not final, failure is not fatal: It is the courage to continue that counts."</h2>
+                    <p>- Winston Churchill</p>
+                </div>
+            </div>
+            <div class="motivation-slide" style="background-image: url('images/slide3.jpg');">
+                <div>
+                    <h2>
+                        "DO THE BEST YOU CAN UNTIL YOU KNOW BETTER.
+                        THEN WHEN YOU KNOW BETTER, DO BETTER."
+                    </h2>
+                    <p>- Maya Angelou</p>
+                </div>
+            </div>
+            <div class="motivation-slide" style="background-image: url('images/slide4.jpg');">
+                <div>
+                    <h2>
+                        "A SHIP IN PORT IS SAFE, BUT THAT'S NOT WHAT SHIPS ARE BUILT FOR."
+                    </h2>
+                    <p>- Grace Hooper</p>
+                </div>
+            </div>
+            <div class="motivation-slide" style="background-image: url('images/slide5.jpg');">
+                <div>
+                    <h2>
+                        "THE CURE FOR BOREDOM IS CURIOSITY.
+                        THERE IS NO CURE FOR CURIOSITY."
+                    </h2>
+                    <p>- Dorothy Parker</p>
+                </div>
+            </div>
+            <div class="motivation-slide" style="background-image: url('images/slide6.jpg');">
+                <div>
+                    <h2>"The only limit to our realization of tomorrow is our doubts of today."</h2>
+                    <p>- Franklin D. Roosevelt</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-3">
+                <div class="col-md-7 heading-section text-center ftco-animate">
+                    <h1 class="big big-2">Contact</h1>
+                    <h2 class="mb-4">Contact Me</h2>
+                    <p>Below are the options to reach out to me!</p>
+                </div>
+            </div>
+            <div class="row d-flex contact-info mb-5 justify-content-center">
+                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                    <div class="align-self-stretch box p-4 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="icon-phone2"></span>
+                        </div>
+                        <h3 class="mb-4">Contact Number</h3>
+                        <p><a href="tel://015901722108"> 015901722108</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                    <div class="align-self-stretch box p-4 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="icon-paper-plane"></span>
+                        </div>
+                        <h3 class="mb-4">Email Address</h3>
+                        <p><a href="mailto:ravipatel30302@gmail.com">ravipatel30302@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                    <div class="align-self-stretch box p-4 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="icon-globe"></span>
+                        </div>
+                        <h3 class="mb-4">Download Resume</h3>
+                        <p><a href="images/resume.pdf">Click Here</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <br>
+            <br />
+            <br>
+            <ul class="ftco-footer-social list-unstyled d-flex flex-column justify-content-center align-items-center mb-0">
+
+                <li class="ftco-animate">
+                    <p style="margin: 10px 0; font-style: italic; color: #FFF; text-align: center;">
+                        You can get in touch with me on social media, because really you can do almost anything you want.
+                        Unless you're not online, which would be weird since this world breathes online,
+                        at least far as I know. But if you were to be reading this offline you'd be clearly crafty,
+                        so I'm confident that ultimately you'd figure it out.
+                    </p>
+                </li>
+                <li class="ftco-animate normal-txt">Find me on</li>
+                <li class="ftco-animate">
+                    <a href="https://www.linkedin.com/in/iravipatel"><span class="icon-linkedin"></span></a>
+                    <a href="https://www.facebook.com/ravipatel20303"><span class="icon-facebook"></span></a>
+                    <a href="https://www.instagram.com/itz_ravip/"><span class="icon-instagram"></span></a>
+                </li>
+            </ul>
+            <br>
+        </div>
+
+        </div>
+        </div>
+    </section>
+
+    <footer class="ftco-footer ftco-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved | Ravi Patel ❤️ |</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" /><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                items: 1,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: false,
+                nav: false,
+                dots: false,
+                animateOut: 'fadeOut',
+                animateIn: 'fadeIn',
+            });
+        });
+    </script>
+</body>
+</html>
